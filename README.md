@@ -170,6 +170,21 @@ Optional arguments:
 - `--pro-scores` points to a different Pro scoring file.
 - `--comparison-output` changes the comparison output path.
 
+## Step 5. Generate Figures
+
+Generates summary figures from the Flash scoring results and saves them to `workspace/outputs/figures/`.
+
+```bash
+generate-plots
+```
+
+Writes:
+
+```
+workspace/outputs/figures/flash_score_distribution.png
+workspace/outputs/figures/flash_dimension_means.png
+```
+
 ## Run the Full Pipeline
 
 `run_pipeline.sh` creates or reuses a virtual environment, installs dependencies, runs Steps 1 through 4c, and writes outputs under `workspace/outputs`.
@@ -207,4 +222,6 @@ workspace/outputs/five_selected_questions_overall_summary.json
 workspace/outputs/rationale_audit_sample_200.json
 workspace/outputs/rationale_audit_sample_200_pro_scores.json
 workspace/outputs/rationale_audit_model_comparison.json
+workspace/outputs/figures/flash_score_distribution.png
+workspace/outputs/figures/flash_dimension_means.png
 ```

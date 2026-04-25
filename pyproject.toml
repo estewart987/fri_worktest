@@ -9,11 +9,13 @@ description = "Rationale scoring tools for ForecastBench data."
 requires-python = ">=3.12"
 dependencies = [
     "litellm>=1.0",
+    "matplotlib>=3.9",
     "python-dotenv>=1.0",
 ]
 
 [project.scripts]
 analyze-questions = "forecastbench_rationale.analyze_questions:main"
+generate-plots = "forecastbench_rationale.generate_plots:main"
 select-questions = "forecastbench_rationale.select_questions:main"
 score-rationales = "forecastbench_rationale.score_rationales:main"
 validate-scores = "forecastbench_rationale.validate_scores:main"

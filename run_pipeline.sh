@@ -90,5 +90,8 @@ step "Step 4c: Compare Flash and Pro scores" \
   validate-scores \
     --pro-scores "$OUTPUTS/rationale_audit_sample_200_pro_scores.json"
 
+step "Step 5: Generate figures" \
+  generate-plots
+
 echo
 echo "Pipeline complete. Outputs are in $OUTPUTS"
